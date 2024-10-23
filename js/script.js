@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Site sobre a Venezuela carregado.');
-    // Adicione aqui qualquer funcionalidade JavaScript adicional que você precise.
-});
+    const themeToggle = document.getElementById('theme-toggle');
+    const languageToggle = document.getElementById('language-toggle');
+
+    themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+    });
+})
